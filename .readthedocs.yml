@@ -11,5 +11,7 @@ sphinx:
 
 python:
   install:
-    - pip install poetry
-    - poetry install
+    pip:
+      - poetry
+  commands:
+    - poetry install 
