@@ -10,8 +10,4 @@ sphinx:
 
 python:
   install:
-    - pip:
-      - poetry
-
-commands:
-  - poetry install
+    - requirements: requirements.txt
