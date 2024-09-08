@@ -1,1 +1,5 @@
-/* This file intentionally left blank. */
+/* Estiliza os sinais "+" e "-" no menu lateral */
+.sidebar .toctree-l1 .toctree-expand, 
+.sidebar .toctree-l2 .toctree-expand {
+    color: red !important;  /* Define a cor dos ícones "+" e "-" */
+}
