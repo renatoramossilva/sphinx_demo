@@ -1,5 +1,5 @@
-calc module
-===========
+Calculator - User's Guide
+=========================
 
 .. automodule:: calc
    :members:

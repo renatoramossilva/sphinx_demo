@@ -11,7 +11,6 @@ Welcome to Sphinx-Demo's documentation!
    :caption: Contents:
 
    modules
-   calc
 
 Indices and tables
 ==================

@@ -1,5 +1,5 @@
-sphinx_demo
-===========
+User Guide
+==========
 
 .. toctree::
    :maxdepth: 4
