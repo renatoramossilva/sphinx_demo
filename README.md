@@ -17,3 +17,8 @@ make test
 make HTML
 open _build/html/index.html
 ```
+
+# Documentation
+
+https://sphinx-demo-r2s.readthedocs.io/en/latest/index.html
+
