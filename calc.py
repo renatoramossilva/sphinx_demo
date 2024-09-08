@@ -1,7 +1,7 @@
 from typing import Union
 
-# Define a função de soma
-def soma(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
+# Define a função de sum
+def sum(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
     """
     Sum function
 
@@ -13,7 +13,7 @@ def soma(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
     return a + b
 
 # Define a função de subtração
-def subtracao(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
+def sub(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
     """
     Sub function
 
@@ -25,7 +25,7 @@ def subtracao(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
     return a - b
 
 # Define a função de multiplicação
-def multiplicacao(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
+def mult(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
     """
     Mult function
 
@@ -37,7 +37,7 @@ def multiplicacao(a: Union[int, float], b: Union[int, float]) -> Union[int, floa
     return a * b
 
 # Define a função de divisão
-def divisao(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
+def div(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
     """
     Div function
 
@@ -50,8 +50,8 @@ def divisao(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
         raise ValueError("Divisão por zero não é permitida.")
     return a / b
 
-# Função principal da calculadora
-def calculadora(operacao: str, a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
+# Função principal da calculator
+def calculator(operacao: str, a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
     """
     Main function
 
@@ -61,14 +61,14 @@ def calculadora(operacao: str, a: Union[int, float], b: Union[int, float]) -> Un
 
     :return: Calc result
     """
-    if operacao == 'soma':
-        return soma(a, b)
-    elif operacao == 'subtracao':
-        return subtracao(a, b)
-    elif operacao == 'multiplicacao':
-        return multiplicacao(a, b)
-    elif operacao == 'divisao':
-        return divisao(a, b)
+    if operacao == 'sum':
+        return sum(a, b)
+    elif operacao == 'sub':
+        return sub(a, b)
+    elif operacao == 'mult':
+        return mult(a, b)
+    elif operacao == 'div':
+        return div(a, b)
     else:
         raise ValueError(f"Operação {operacao} não é suportada.")
 
@@ -76,7 +76,7 @@ def calculadora(operacao: str, a: Union[int, float], b: Union[int, float]) -> Un
 if __name__ == "__main__":
     a = 10
     b = 5
-    print("Soma:", calculadora('soma', a, b))
-    print("Subtração:", calculadora('subtracao', a, b))
-    print("Multiplicação:", calculadora('multiplicacao', a, b))
-    print("Divisão:", calculadora('divisao', a, b))
+    print("sum:", calculator('sum', a, b))
+    print("Subtração:", calculator('sub', a, b))
+    print("Multiplicação:", calculator('mult', a, b))
+    print("Divisão:", calculator('div', a, b))
