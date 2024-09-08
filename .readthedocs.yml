@@ -8,6 +8,7 @@ build:
 sphinx:
   configuration: docs/conf.py
 
+# Source code settings
 source:
   git:
     branch: master
